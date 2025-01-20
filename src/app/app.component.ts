@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { SharedHeaderComponent } from './components/shared-header/shared-header.component';
+import { TextToBinaryComponent } from './components/text-to-binary/text-to-binary.component';
+import { BinaryToTextComponent } from './components/binary-to-text/binary-to-text.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [SharedHeaderComponent, TextToBinaryComponent, BinaryToTextComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'Convertidor';
-}
+export class AppComponent {}
