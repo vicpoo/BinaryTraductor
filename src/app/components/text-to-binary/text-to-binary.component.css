@@ -1,3 +1,93 @@
-div {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.translator-container {
+  background: linear-gradient(to bottom right, #4c1d95, #6b21a8);
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden; /* Previene que contenido extra sobresalga */
+}
+
+/* Título */
+.translator-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Área de texto */
+.translator-textarea {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #7c3aed;
+  border-radius: 8px;
+  background-color: #5b21b6;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  outline: none;
+  resize: none;
+  box-sizing: border-box; /* Asegura que el padding y borde no desborden */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.translator-textarea::placeholder {
+  color: #a78bfa;
+}
+
+.translator-textarea:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 8px #a855f7;
+}
+
+/* Botón */
+.translator-button {
+  width: 100%;
+  background-color: #7c3aed;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.translator-button:hover {
+  background-color: #a78bfa;
+  transform: scale(1.05);
+}
+
+/* Resultado */
+.translator-result {
+  margin-top: 24px;
+}
+
+.result-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.result-output {
+  background-color: #5b21b6;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-family: monospace;
+  color: #c4b5fd;
+  text-align: left;
+  word-break: break-word; /* Para evitar que texto muy largo desborde */
+}

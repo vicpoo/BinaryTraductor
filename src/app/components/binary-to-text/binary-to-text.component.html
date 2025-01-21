@@ -1,14 +1,14 @@
-<div class="p-6 bg-purple-900 text-white shadow-lg rounded">
-    <h3 class="text-lg font-bold mb-4">Binario a texto</h3>
-    <textarea 
-      [(ngModel)]="binary"
-      placeholder="Introduce el binario aquí"
-      class="w-full p-3 border border-purple-500 rounded mb-4 bg-purple-700 text-white"></textarea>
-    <button 
-      (click)="convertToText()"
-      class="bg-purple-500 hover:bg-purple-400 text-white font-bold px-4 py-2 rounded">Traducir</button>
-    <div *ngIf="text" class="mt-4">
-      <h4 class="font-bold">Resultado en Texto:</h4>
-      <p class="bg-purple-700 p-3 rounded">{{ text }}</p>
-    </div>
+<div class="binary-to-text-container">
+  <h3 class="binary-to-text-title">Binario a Texto</h3>
+  <textarea 
+    [(ngModel)]="binary"
+    placeholder="Introduce el binario aquí"
+    class="binary-to-text-textarea"></textarea>
+  <button 
+    (click)="convertToText()"
+    class="binary-to-text-button">Traducir</button>
+  <div *ngIf="text" class="binary-to-text-result">
+    <h4 class="result-title">Resultado en Texto:</h4>
+    <p class="result-output">{{ text }}</p>
   </div>
+</div>

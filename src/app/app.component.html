@@ -1,10 +1,14 @@
-<div class="flex flex-col items-center justify-center min-h-screen bg-purple-800 text-white">
-  <h1 class="text-4xl font-bold mb-6">Convertidor</h1>
+<div class="container">
+  <h1 class="title">Convertidor de Texto y Binario</h1>
 
   <app-shared-header></app-shared-header>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <app-text-to-binary></app-text-to-binary>
-    <app-binary-to-text></app-binary-to-text>
+  <div class="card-container">
+    <div class="card">
+      <app-text-to-binary></app-text-to-binary>
+    </div>
+    <div class="card">
+      <app-binary-to-text></app-binary-to-text>
+    </div>
   </div>
 </div>
